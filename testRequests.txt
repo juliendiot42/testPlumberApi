@@ -1,0 +1,8 @@
+# test on the lab's server
+curl -X GET "192.168.101.44:8080/echo?msg=helloWorld" -H "accept: application/json" -v
+
+# test on the SIP server
+curl -X GET "54.250.58.179:8080/echo?msg=helloWorld" -H "accept: application/json" -v
+
+# test on myself
+curl -X GET "127.0.0.1:8080/echo?msg=helloWorld" -H "accept: application/json" -v
